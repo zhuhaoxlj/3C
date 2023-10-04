@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000507"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#03A9F4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灵动音乐"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent= "true">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <RelativeLayout
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_circle_shape">
+
+            <EditText
+                android:textCursorDrawable="@drawable/my_edit_text"
+                android:theme="@style/MyEditText"
+                android:layout_marginTop="30dp"
+                android:hint="请输入账号"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/editTextNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorLink="#000000"
+                android:inputType="number" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/my_edit_text"
+                android:theme="@style/MyEditText"
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/editTextNumber"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button"
+                android:background="@drawable/button_circle_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/editTextTextPassword"
+                android:text="登陆" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+<TextView
+    android:id="@+id/jump"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="跳转"
+    android:textColor="#ffffff"
+    android:textSize="30dp"
+    android:layout_gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"></TextView>
+</LinearLayout>
